@@ -1,4 +1,3 @@
-pipeline {
 job('upstreamJob') {
     scm {
         git {
@@ -65,5 +64,4 @@ job('downstreamJob') {
             completedStatus('ERROR', "The job has resulted in an error")
         }
     }
-}
 }
